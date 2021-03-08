@@ -22,7 +22,7 @@ public class OrderActivity extends AppCompatActivity implements AdapterView.OnIt
         setContentView(R.layout.activity_order);
 
         Intent intent = getIntent();
-        String message = "Order: " + intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = "Your order: " + intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.order_textview);
         textView.setText(message);
 
